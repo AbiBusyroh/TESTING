@@ -1,0 +1,137 @@
+*,
+html {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+div ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat';
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 10px;
+    background-color: brown;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat';
+    padding-left: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li :hover {
+    background-color: tomato;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.isi-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(128, 37, 37);
+    color: white;
+    font-family: 'montserrat';
+}
+
+.isi-traktor {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px;
+}
+
+
+.article-group {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(128, 37, 37);
+    color: white;
+    font-family: 'montserrat';
+    padding: 100px;
+}
+
+.text-picture1 {
+    background-color: rgb(105, 16, 24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text-picture1 :hover {
+    color: rgb(199, 34, 48);
+}
+
+.text-picture2 {
+    background-color: rgb(105, 16, 24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text-picture2 :hover {
+    color: rgb(199, 34, 48);
+}
+
+.text-picture3 {
+    background-color: rgb(105, 16, 24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text-picture3 :hover {
+    color: rgb(199, 34, 48);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+
+    div ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+    }
+
+    .navbar-ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        font-size: 25px;
+        color: white;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .article-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+}
